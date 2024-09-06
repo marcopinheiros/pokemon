@@ -29,7 +29,7 @@ namespace PokemonList.Controllers
 
             _context.Masters.Add(master);
             await _context.SaveChangesAsync();
-            return Ok("Mestre pokemno regitsrado com sucesso!!!");
+            return Ok("Mestre pokemon regitsrado com sucesso!!!");
         }
 
     }

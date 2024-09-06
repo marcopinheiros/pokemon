@@ -16,7 +16,7 @@ namespace PokemonList.Controllers
             _pokeApiService = pokeApiService;
         }
 
-        // Endpoint para obter 10 Pokémon aleatórios
+        
         [HttpGet("random")]
         public async Task<IActionResult> GetRandomPokemon()
         {
@@ -24,7 +24,7 @@ namespace PokemonList.Controllers
             return Ok(randomPokemons);
         }
 
-        // Endpoint para obter Pokémon por ID
+        
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
