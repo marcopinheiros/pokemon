@@ -1,0 +1,17 @@
+﻿<h1>Cadastrar Mestre Pokémon</h1>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Nome</label>
+        <input type="text" name="Name" required />
+    </div>
+    <div>
+        <label>Idade</label>
+        <input type="number" name="Age" required />
+    </div>
+    <div>
+        <label>CPF</label>
+        <input type="text" name="CPF" required maxlength="11" />
+    </div>
+    <button type="submit">Cadastrar</button>
+</form>

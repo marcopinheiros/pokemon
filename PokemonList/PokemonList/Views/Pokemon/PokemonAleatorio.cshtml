@@ -1,0 +1,14 @@
+﻿@model List<PokemonList.Services.Pokemon>
+
+<h1>10 Pokémon Aleatórios</h1>
+
+<ul>
+    @foreach (var pokemon in Model)
+    {
+        <li>
+            <strong>@pokemon.Name</strong> - ID: @pokemon.Id
+            <br />
+            <img src="@pokemon.Sprites.Front_Default" alt="@pokemon.Name" />
+        </li>
+    }
+</ul>
